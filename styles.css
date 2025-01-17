@@ -2,11 +2,31 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   font-family: "Lexend Mega", sans-serif;
   font-size: 16px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.h2-styling {
+  font-size: 2rem;
+  margin: 15px 0 20px 0;
+}
+
+.p-styling {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px auto;
+  width: 85%;
 }
 
 /* Header */
@@ -34,10 +54,6 @@ header .nav-links li a {
 
 /* Mission */
 .mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   height: 300px;
   background-image: url("./images/skyscrapers.webp");
   background-position: center;
@@ -50,14 +66,65 @@ header .nav-links li a {
   width: 100%;
 }
 
-.statement h2 {
-  font-size: 2rem;
-  margin: 15px 0 20px 0;
+/* Portfolio */
+#portfolio {
+  flex-direction: column;
+  margin-top: 50px;
 }
 
-.statement p {
-  font-size: 1.2rem;
-  font-weight: bold;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px 20px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: auto;
+  height: 200px;
+  margin: 15px 25px 0 0;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Team */
+
+/* Team Section */
+#our-team {
+  flex-direction: column;
+}
+
+.team-container {
+  background-image: url("./images/blurred-road.webp");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.team-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Use gap instead of margin for spacing */
+  margin: 15px auto;
+  width: 75%;
+}
+
+.team-gallery article {
+  width: calc(33.333% - 15px); /* Adjust for spacing */
+  min-width: 200px; /* Set a minimum width for smaller screens */
+}
+
+.team-gallery-img img {
+  height: 300px;
+  width: auto;
+}
+
+.team-gallery-img figcaption {
   margin: 10px auto;
-  width: 85%;
+  color: seashell;
+  font-size: 1.2rem;
+}
+
+.team-gallery-img figcaption p {
+  margin: 15px 0;
 }
