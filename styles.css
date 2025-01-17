@@ -21,13 +21,43 @@ header h1 {
   margin-bottom: 25px;
 }
 
-header #nav-links {
+header .nav-links {
   display: flex;
   list-style: none;
   justify-content: space-around;
   font-size: 1.2rem;
 }
 
-header #nav-links li a {
+header .nav-links li a {
   color: black;
+}
+
+/* Mission */
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  background-image: url("./images/skyscrapers.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.statement {
+  background-color: white;
+  width: 100%;
+}
+
+.statement h2 {
+  font-size: 2rem;
+  margin: 15px 0 20px 0;
+}
+
+.statement p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px auto;
+  width: 85%;
 }
