@@ -110,7 +110,7 @@ header .nav-links li a {
 }
 
 .team-gallery article {
-  width: calc(33.333% - 15px); /* Adjust for spacing */
+  width: calc(33.333% - 20px); /* Adjust for spacing */
   min-width: 200px; /* Set a minimum width for smaller screens */
 }
 
@@ -127,4 +127,18 @@ header .nav-links li a {
 
 .team-gallery-img figcaption p {
   margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+
+footer .email {
+  font-weight: bold;
+  margin: 25px;
+}
+
+.copyright {
+  margin: 50px 0 25px 0;
 }
